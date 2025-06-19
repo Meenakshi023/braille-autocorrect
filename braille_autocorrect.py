@@ -84,14 +84,14 @@ def braille_autocorrect():
             break
         if keys == "SPACE":
             final_word += ' '
-            print("␣ Space added")
+            print(" Space added")
         elif keys == "BACK":
             final_word = final_word[:-1]
-            print("⌫ Deleted last character")
+            print(" Deleted last character")
         else:
             letter = interpret_braille_keys(keys)
             final_word += letter
-            print(f"⟶ Interpreted as: {letter}")
+            print(f" Interpreted as: {letter}")
 
     print(f"\n Final interpreted input: {final_word}")
     start_time = time.time()
